@@ -1,35 +1,33 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterTestingModule } from '@angular/router/testing';
 
-import { AppComponent } from './app.component';
+import { HomeComponent } from './home.component';
 
-describe('AppComponent', () => {
+describe('HomeComponent', () => {
 
-    let fixture: ComponentFixture<AppComponent>;
-    let target: AppComponent;
+    let fixture: ComponentFixture<HomeComponent>;
+    let target: HomeComponent;
     let targetEl: HTMLElement;
 
     beforeEach(async(() => {
         TestBed.configureTestingModule({
             imports: [
+                NoopAnimationsModule,
                 RouterTestingModule
             ],
             declarations: [
-                AppComponent
-            ],
+                HomeComponent
+            ]
         }).compileComponents();
-        fixture = TestBed.createComponent(AppComponent);
+        // create test target;
+        fixture = TestBed.createComponent(HomeComponent);
         target = fixture.componentInstance;
         targetEl = fixture.debugElement.nativeElement;
     }));
 
-    it('should create the app', async(() => {
+    it('should create HomeComponent', async(() => {
         expect(target).toBeTruthy();
-    }));
-
-    it(`should has a navbar-brand 'Angular + ArcGIS API Demo'`, async(() => {
-        expect(targetEl.querySelector('a.navbar-brand').textContent)
-            .toEqual('Angular + ArcGIS API Demo');
     }));
 
 });

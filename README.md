@@ -1,27 +1,43 @@
-# NgArcgisTest
+# Angular & ArcGIS API for JavaScript Demo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.
+Angular and ArcGIS API for JavaScript 4.x Demo Project
 
-## Development server
+## Tech stack
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+  - typescript
+  - angular
+  - ng-bootstrap
+  - font awesome
+  - angular-cli
+  - ArcGIS API for JavaScript 4.x
 
-## Code scaffolding
+## Usage
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+> For Windows users, please make sure execute these commands in a bash shell
+> like Cygwin, Mingw, or Git Shell.
 
-## Build
+  1. Clone or fork this repository with git:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+     ```shell
+     git clone https://github.com/beginor/ng-esri-demo.git
+     ```
 
-## Running unit tests
+  2. Install dependencies with npm:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+     ```shell
+     npm install
+     ```
 
-## Running end-to-end tests
+  3. Start with command
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+     ```shell
+     npm start
+     ```
 
-## Further help
+  4. Create an aot build
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+     ```shell
+     npm run build-aot
+     ```
+
+  5. Happy coding!.

@@ -1,14 +1,16 @@
 import { AppPage } from './app.po';
 
-describe('ng-arcgis-test App', () => {
-  let page: AppPage;
+describe('ng-seed App', () => {
 
-  beforeEach(() => {
-    page = new AppPage();
-  });
+    let page: AppPage;
 
-  it('should display welcome message', () => {
-    page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to app!');
-  });
+    beforeEach(() => {
+        page = new AppPage();
+    });
+
+    it('should display Navbar Brand', () => {
+        page.navigateTo();
+        expect(page.getNavbarBrand()).toEqual('Angular + ArcGIS API Demo');
+    });
+
 });
