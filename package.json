@@ -8,7 +8,9 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "e2ee": "ng e2e --webdriver-update false",
+    "webdriver-update": "webdriver-manager update --proxy http://127.0.0.1:1080"
   },
   "private": true,
   "dependencies": {
@@ -23,7 +25,12 @@
     "@angular/router": "^5.0.0",
     "core-js": "^2.4.1",
     "rxjs": "^5.5.2",
-    "zone.js": "^0.8.14"
+    "zone.js": "^0.8.14",
+    "web-animations-js": "^2.3.1",
+    "bootstrap": "^4.0.0-beta.2",
+    "@ng-bootstrap/ng-bootstrap": "^1.0.0-beta.5",
+    "font-awesome": "^4.7.0",
+    "angular-esri-loader": "^1.1.0"
   },
   "devDependencies": {
     "@angular/cli": "1.5.0",
@@ -44,6 +51,7 @@
     "protractor": "~5.1.2",
     "ts-node": "~3.2.0",
     "tslint": "~5.7.0",
-    "typescript": "~2.4.2"
+    "typescript": "~2.4.2",
+    "@types/arcgis-js-api": "^4.5.1"
   }
 }
